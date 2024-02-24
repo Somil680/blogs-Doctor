@@ -6,7 +6,7 @@ type Props = {}
 const Home = ({}: Props) => {
   return (
     <>
-      <div>
+      <div className="h-screen flex justify-center items-center">
         <h1>In development mode</h1>
       </div>
     </>

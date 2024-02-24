@@ -21,10 +21,9 @@ const Navbar = ({}: Props) => {
       <section>
         <div className="w-full flex justify-center   ">
           <div
-            className={`w-full h-16 border-2 mb-2 flex justify-evenly items-center px-3 rounded-md  fixed  z-50 bg-[--navbar-bg] `}
+            className={`w-full  border-2 mb-2 flex justify-evenly items-center px-3 py-5 rounded-md  fixed  z-50 bg-[--navbar-bg]  `}
           >
-            {/* <div className={styles['container']}> */}
-            <div className="flex gap-5">
+            <div className="flex gap-20">
               <p className="text-4xl"> Dr. Aman Agrahari Gupta </p>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
