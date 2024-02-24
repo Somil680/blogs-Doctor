@@ -25,7 +25,7 @@ const Navbar = ({}: Props) => {
           >
             {/* <div className={styles['container']}> */}
             <div className="flex gap-5">
-              <p className="text-4xl"> Dr. Aman Gupat </p>
+              <p className="text-4xl"> Dr. Aman Agrahari Gupta </p>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="outline" size="icon">

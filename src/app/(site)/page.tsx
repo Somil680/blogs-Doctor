@@ -7,7 +7,7 @@ const Home = ({}: Props) => {
   return (
     <>
       <div>
-        <h1>Dr. Aman Gupta</h1>
+        <h1>In development mode</h1>
       </div>
     </>
   )
