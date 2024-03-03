@@ -21,10 +21,13 @@ const Navbar = ({}: Props) => {
       <section>
         <div className="w-full flex justify-center  ">
           <div
-            className={`w-full  border-2 mb-2 flex justify-evenly items-center px-3 py-5 rounded-md  fixed  z-50 bg-[--navbar-bg]  `}
+            className={`w-full  border-2 mb-2 flex justify-evenly items-center px-3 py-5 rounded-md  fixed  z-50 bg-[#F5EBEB]   `}
           >
             <div className="flex gap-20">
-              <p className="text-4xl"> Dr. Aman Agrahari Gupta </p>
+              <p className="text-4xl text-[#704F4F] ">
+                {' '}
+                Dr. Aman Agrahari Gupta{' '}
+              </p>
               <Button>Book Now</Button>
               {/* <DropdownMenu>
                 <DropdownMenuTrigger asChild>
