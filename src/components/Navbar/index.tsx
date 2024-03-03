@@ -19,13 +19,14 @@ const Navbar = ({}: Props) => {
   return (
     <>
       <section>
-        <div className="w-full flex justify-center   ">
+        <div className="w-full flex justify-center  ">
           <div
             className={`w-full  border-2 mb-2 flex justify-evenly items-center px-3 py-5 rounded-md  fixed  z-50 bg-[--navbar-bg]  `}
           >
             <div className="flex gap-20">
               <p className="text-4xl"> Dr. Aman Agrahari Gupta </p>
-              <DropdownMenu>
+              <Button>Book Now</Button>
+              {/* <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="outline" size="icon">
                     <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -44,7 +45,7 @@ const Navbar = ({}: Props) => {
                     System
                   </DropdownMenuItem>
                 </DropdownMenuContent>
-              </DropdownMenu>
+              </DropdownMenu> */}
             </div>
           </div>
         </div>
