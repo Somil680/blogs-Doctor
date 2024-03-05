@@ -41,7 +41,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 Total hip replacement
               </p>
               <Button className="w-fit">Read more</Button>
@@ -54,7 +54,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 Partial knee replacement{' '}
               </p>
               <Button className="w-fit">Read more</Button>
@@ -67,7 +67,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 Allignment correction surgies/HTO
               </p>
               <Button className="w-fit">Read more</Button>
@@ -80,7 +80,9 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">Arthroscopy</p>
+              <p className="text-xl font-medium text-primary_color ">
+                Arthroscopy
+              </p>
               <Button className="w-fit">Read more</Button>
             </CardHeader>
           </Card>
@@ -91,7 +93,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 ACL/PCL reconstruction
               </p>
               <Button className="w-fit">Read more</Button>
@@ -104,7 +106,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 Meniscus repair
               </p>
               <Button className="w-fit">Read more</Button>
@@ -117,7 +119,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 LCL/MCL repair
               </p>
               <Button className="w-fit">Read more</Button>
@@ -130,7 +132,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 Shoulder arthroscopy
               </p>
               <Button className="w-fit">Read more</Button>
@@ -143,7 +145,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 Complex trauma
               </p>
               <Button className="w-fit">Read more</Button>
@@ -156,7 +158,7 @@ const Services = ({}: Props) => {
               className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
             />
             <CardHeader className="flex w-full">
-              <p className="text-xl font-medium text-[#704F4F] ">
+              <p className="text-xl font-medium text-primary_color ">
                 Orthobiologics/PRP
               </p>
               <Button className="w-fit">Read more</Button>

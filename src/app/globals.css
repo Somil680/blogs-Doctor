@@ -4,6 +4,10 @@
 
 @layer base {
   :root {
+    --primary-color: #7fb77e;
+    /* --primary-color: #99bc85; */
+    --secondary-color: #e1f0da;
+
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
 
@@ -76,10 +80,10 @@
 }
 @layer components {
   ::selection {
-    @apply bg-[#704F4F] text-white;
+    @apply bg-primary_color text-white;
   }
   .heading {
-    @apply text-xl font-extrabold text-[#704F4F] md:text-xl z-20 w-fit relative mx-auto text-center
+    @apply text-xl font-extrabold text-black md:text-xl z-20 w-fit relative mx-auto text-center
     after:absolute after:w-10 after:h-0.5 after:bg-black/40 after:left-1/2 after:-translate-x-1/2 after:-bottom-3
     md:mx-0 md:after:top-1/2 md:after:-translate-y-1/2 
     md:after:-right-20 md:after:left-auto md:translate-x-0 md:after:bottom-auto;
@@ -91,12 +95,12 @@
     md:before:w-16 md:before:h-16;
   }
   .heading span[data-bg="purple"] {
-    @apply before:bg-[#F5EBEB];
+    @apply before:bg-secondary_color;
   }
   .heading span[data-bg="white"] {
     @apply before:bg-white;
   }
   .heading span[data-bg="purple-light"] {
-    @apply before:bg-[#F5EBEB];
+    @apply before:bg-secondary_color;
   }
 }

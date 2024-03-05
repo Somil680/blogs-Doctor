@@ -57,10 +57,39 @@ const Home = ({}: Props) => {
   return (
     <>
       <section className="flex flex-col gap-12 items-center w-full">
+        <Carousel
+          plugins={[Autoplay({ delay: 2000, stopOnInteraction: true })]}
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+          className="w-full "
+        >
+          <CarouselContent className="">
+            {ImageArray.map((item, index) => (
+              <CarouselItem key={index} className="w-full  ">
+                <div className="p-1">
+                  <Card>
+                    <Image
+                      src={item.img}
+                      className="w-full lg:h-[600px] h-[250px]  object-fill"
+                      alt=""
+                    />
+
+                    {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          {/* <CarouselPrevious />
+  <CarouselNext /> */}
+        </Carousel>
+
         <About />
         <Cards />
 
-        <div className=" bg-[#F5EBEB] w-full">
+        <div className=" bg-secondary_color w-full">
           <Services />
         </div>
 
@@ -87,7 +116,7 @@ const Home = ({}: Props) => {
           </Card>
         </div>
 
-        <div className=" bg-[#F5EBEB] w-full">
+        <div className=" bg-secondary_color w-full">
           <Footer />
         </div>
       </section>
