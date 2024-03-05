@@ -22,11 +22,11 @@ const About = ({}: Props) => {
             <Image src={joint} alt={''} className="w-full lg:max-w-md h-full" />
           </div>
           <div className="flex flex-col gap-4  ">
-            <h1 className="text-4xl font-bold     text-[#704F4F]">
+            <h1 className="text-4xl font-bold     text-primary_color">
               Dr. Aman Agrahari Gupta
             </h1>
 
-            <div className=" flex flex-col gap-4 text-md rounded-sm  p-3  bg-[#704F4F] text-white ">
+            <div className=" flex flex-col gap-4 text-md rounded-sm  p-3 lg:p-10  bg-secondary_color text-black ">
               <p className=" text-justify ">
                 <b>
                   MBBS | MS Orthopedic | Fellowship in Joint Replacement Surgery

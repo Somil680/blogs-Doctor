@@ -21,10 +21,10 @@ const Navbar = ({}: Props) => {
       <section>
         <div className="w-full flex justify-center  ">
           <div
-            className={`w-full  border-2 mb-2 flex justify-center items-center px-3 py-5 rounded-md  fixed  z-50 bg-[#F5EBEB]   `}
+            className={`w-full  border-2 mb-2 flex justify-center items-center px-3 py-5 rounded-md  fixed  z-50 bg-secondary_color   `}
           >
             <div className="flex flex-col gap-5 lg:flex-row lg:max-w-screen-2xl w-full justify-between items-center shrink-0 ">
-              <p className="text-3xl lg:text-4xl text-[#704F4F] ">
+              <p className="text-3xl lg:text-4xl text-black ">
                 Dr. Aman Agrahari Gupta
               </p>
               <div className=" flex flex-row w-full lg:w-fit justify-between gap-3">

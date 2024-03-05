@@ -9,19 +9,19 @@ const Footer = ({}: Props) => {
   return (
     <>
       <div className="flex gap-4 flex-col items-center p-3 lg:mx-[200px]  ">
-        <h1 className="text-2xl lg:text-5xl font-bold text-center p-5 text-[#704F4F] ">
+        <h1 className="text-2xl lg:text-5xl font-bold text-center p-5 text-primary_color ">
           Dr. Aman Agrahari Gupta
         </h1>
-        <div className=" text-[#704F4F] text-center ">
-          <p className="text-xl text-[#704F4F] ">
+        <div className=" text-primary_color text-center ">
+          <p className="text-xl text-primary_color ">
             <b>Address</b>
             :Shalby hospital jabalpur,Plot- B, Scheme No. 5 Ahinsa Chowk, Road,
             Kanchan Vihar, Vijay Nagar, Jabalpur, Madhya Pradesh 482002
           </p>
-          <p className="text-xl text-[#704F4F]  ">
+          <p className="text-xl text-primary_color  ">
             <b>Email</b>: dr.amanagraharijabalpur@gmail.com
           </p>
-          <p className="text-xl text-[#704F4F]  ">
+          <p className="text-xl text-primary_color  ">
             <b>Phone :</b>
             +918770925296
           </p>
@@ -39,7 +39,7 @@ const Footer = ({}: Props) => {
           ></iframe>
         </div>
         <Separator orientation="horizontal" />
-        <Card className=" text-sm font-semibold p-2 text-[#704F4F] ">
+        <Card className=" text-sm font-semibold p-2 text-primary_color ">
           © 2023 Dr. Aman Agrahari Gupta | All Rights Reserved | Designed by
           Somil Agrawal
         </Card>

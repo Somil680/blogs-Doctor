@@ -12,7 +12,7 @@ export default function RootLayout({ children }: Props) {
       <Navbar />
       <main
         id="main"
-        className="flex justify-center items-center pt-[185px] lg:pt-[85px] "
+        className="flex justify-center items-center pt-[170px] lg:pt-[85px] "
       >
         <div className="">{children}</div>
       </main>{' '}
