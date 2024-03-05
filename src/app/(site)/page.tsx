@@ -27,6 +27,8 @@ import { Separator } from '@/components/ui/separator'
 import About from '@/components/About'
 import Services from '@/components/Services'
 import Footer from '@/components/Footer'
+import Cards from '@/components/Card'
+import { Textarea } from '@/components/ui/textarea'
 type Props = {}
 
 const Home = ({}: Props) => {
@@ -55,96 +57,30 @@ const Home = ({}: Props) => {
   return (
     <>
       <section className="flex flex-col gap-12 items-center w-full">
-        <Carousel
-          plugins={[Autoplay({ delay: 2000, stopOnInteraction: true })]}
-          opts={{
-            align: 'start',
-            loop: true,
-          }}
-          className="w-full h-[600px] "
-        >
-          <CarouselContent className=" h-[600px]">
-            {ImageArray.map((item, index) => (
-              <CarouselItem key={index} className="w-full h-[600px] ">
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="flex  items-center justify-center ">
-                      <Image
-                        src={item.img}
-                        className="w-full h-[600px]  object-cover"
-                        alt=""
-                      />
-                      {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          {/* <CarouselPrevious />
-  <CarouselNext /> */}
-        </Carousel>
         <About />
-
-        <div className="flex justify-between gap-6  max-w-[1500px]  w-full">
-          <Card className="w-80 h-48 flex flex-col justify-center items-center gap-5 shadow-xl">
-            <div className="flex justify-center items-center gap-4">
-              <Doctor />
-              <p className="text-5xl font-extrabold text-[#704F4F]">6+</p>
-            </div>
-            <p className="text-2xl font-medium ">Years of Experience</p>
-          </Card>
-          <Card className="w-80 h-48 flex flex-col justify-center items-center gap-5 shadow-xl">
-            <div className="flex justify-center items-center gap-4">
-              <Image alt="" src={family} className="w-[64px]" quality={100} />
-              <p className="text-5xl font-extrabold text-[#704F4F] ">900+</p>
-            </div>
-            <p className="text-2xl font-medium">Happy Families </p>
-          </Card>
-          <Card className="w-80 h-48 flex flex-col justify-center items-center gap-5 shadow-xl">
-            <div className="flex justify-center items-center gap-4">
-              <Image
-                alt=""
-                src={surgeries}
-                className="w-[64px]"
-                quality={100}
-              />
-
-              <p className="text-5xl font-extrabold text-[#704F4F] ">5000+</p>
-            </div>
-            <p className="text-2xl font-medium">Successful surgeries</p>
-          </Card>
-          <Card className="w-80 h-48 flex flex-col justify-center items-center gap-5 shadow-xl">
-            <div className="flex justify-center items-center gap-4">
-              <Image alt="" src={award} className="w-[64px]" quality={100} />
-              <p className="text-5xl font-extrabold text-[#704F4F] ">3+</p>
-            </div>
-            <p className="text-2xl font-medium">Awards</p>
-          </Card>
-        </div>
+        <Cards />
 
         <div className=" bg-[#F5EBEB] w-full">
           <Services />
         </div>
 
-        <div className="flex gap-4 flex-col mx-[200px]  p-10">
-          <h1 className="text-5xl font-bold text-center p-5 text-[#704F4F] ">
+        <div className="flex gap-4 flex-col lg:mx-[200px]   p-3">
+          <h1 className="text-4xl font-bold  text-[#704F4F] ">
             Send Us Message
           </h1>
-          <Card className="flex flex-col  items-center gap-7 p-10 bg-[#faf3f375]  ">
+          <Card className="flex flex-col  items-center gap-7  border-none p-3  lg:w-[500px] ">
             <Input
-              className="w-[500px] text-xl h-16 p-2"
+              className="w-full text-xl h-16 p-2"
               type="text"
               placeholder="Name"
             />
             <Input
-              className="w-[500px] text-xl h-16 p-2"
+              className="w-full text-xl h-16 p-2"
               type="text"
               placeholder="Mobile no."
             />
-            <Input
-              className="w-[500px] text-xl h-16 p-2"
-              type="text"
+            <Textarea
+              className="w-full text-xl h-16 p-2"
               placeholder="Message"
             />
             <Button className="w-full">Submit</Button>
