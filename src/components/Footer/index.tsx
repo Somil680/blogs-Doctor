@@ -19,11 +19,11 @@ const Footer = ({}: Props) => {
             Kanchan Vihar, Vijay Nagar, Jabalpur, Madhya Pradesh 482002
           </p>
           <p className="text-xl text-[#704F4F]  ">
-            <b>Email</b>: dramitsaojinagpur@gmail.com
+            <b>Email</b>: dr.amanagraharijabalpur@gmail.com
           </p>
           <p className="text-xl text-[#704F4F]  ">
             <b>Phone :</b>
-            09860380444
+            +918770925296
           </p>
         </div>
 
