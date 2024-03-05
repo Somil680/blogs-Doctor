@@ -4,57 +4,164 @@ import hip from '@/Assets/hip.jpg'
 import knee from '@/Assets/knee.jpg'
 import kneeFacture from '@/Assets/knee facture.jpg'
 import joint from '@/Assets/joint.jpg'
+import Arthroscopy from '@/Assets/Arthroscopy.jpg'
+import trama from '@/Assets/trama.jpg'
+import sholder from '@/Assets/Shoulder-Arthroscopy.jpg'
+import Orthobiologics from '@/Assets/Orthobiologics.jpg'
+import Meniscus from '@/Assets/Meniscus repair.jpg'
+import LCL from '@/Assets/LCL-MCL-Meniscus.jpg.webp'
+import alignment from '@/Assets/allignment.jpg'
+import pcl from '@/Assets/PCL.jpg'
 import Image from 'next/image'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+} from '../ui/card'
+import { Button } from '../ui/button'
 type Props = {}
 
 const Services = ({}: Props) => {
   return (
     <>
-      <div className="flex gap-4 flex-col p-3  lg:mx-[200px] ">
-        <h1 className="text-3xl font-bold text-[#000000] ">
-          Services We Offers
+      <div className="flex gap-10 flex-col p-3 pt-10  lg:mx-[200px] ">
+        <h1 className="heading text-3xl">
+          <span data-bg="white">S</span>ervices We Offers
         </h1>
-        <div className="flex flex-wrap justify-around items-center gap-7 ">
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> Total hip replacement</p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={knee} className="w-[30rem]" />
-            <p className="text-xl p-5"> Partial knee replacement</p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> Allignment correction surgies/HTO</p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> Arthroscopy</p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> ACL/PCL reconstruction</p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> Meniscus repair</p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> LCL/MCL repair </p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> Shoulder arthroscopy</p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> Complex trauma </p>
-          </div>
-          <div className="border-2 bg-gray-200 w-fit">
-            <Image alt="" src={hip} className="w-[30rem]" />
-            <p className="text-xl p-5"> Orthobiologics/PRP</p>
-          </div>
+        {/* <h1 className="text-3xl font-bold text-[#000000] ">
+          Services We Offers
+        </h1> */}
+        <div className="grid  lg:grid-cols-3  items-center gap-7 ">
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={hip}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                Total hip replacement
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={knee}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                Partial knee replacement{' '}
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={alignment}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                Allignment correction surgies/HTO
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={Arthroscopy}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">Arthroscopy</p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={pcl}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                ACL/PCL reconstruction
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={Meniscus}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                Meniscus repair
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={LCL}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                LCL/MCL repair
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={sholder}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                Shoulder arthroscopy
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={trama}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                Complex trauma
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
+          <Card className=" w-full lg:w-fit h-[500px] ">
+            <Image
+              alt=""
+              src={Orthobiologics}
+              className=" w-full lg:w-[30rem] h-[388px] rounded-lg"
+            />
+            <CardHeader className="flex w-full">
+              <p className="text-xl font-medium text-[#704F4F] ">
+                Orthobiologics/PRP
+              </p>
+              <Button className="w-fit">Read more</Button>
+            </CardHeader>
+          </Card>
         </div>
       </div>
     </>

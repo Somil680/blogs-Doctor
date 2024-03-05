@@ -65,8 +65,8 @@ const Home = ({}: Props) => {
         </div>
 
         <div className="flex gap-4 flex-col lg:mx-[200px]   p-3">
-          <h1 className="text-4xl font-bold  text-[#704F4F] ">
-            Send Us Message
+          <h1 className="heading text-3xl">
+            <span data-bg="purple">B</span>ook an Appointment
           </h1>
           <Card className="flex flex-col  items-center gap-7  border-none p-3  lg:w-[500px] ">
             <Input
