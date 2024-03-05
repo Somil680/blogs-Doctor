@@ -10,8 +10,8 @@ type Props = {}
 const Services = ({}: Props) => {
   return (
     <>
-      <div className="flex gap-4 flex-col mx-[200px]  p-10">
-        <h1 className="text-5xl font-bold text-center p-5 text-[#704F4F] ">
+      <div className="flex gap-4 flex-col p-3  lg:mx-[200px] ">
+        <h1 className="text-3xl font-bold text-[#000000] ">
           Services We Offers
         </h1>
         <div className="flex flex-wrap justify-around items-center gap-7 ">
