@@ -28,7 +28,7 @@ const Services = ({}: Props) => {
     <>
       <div className="flex gap-10 flex-col p-3 pt-10  lg:mx-[200px] ">
         <h1 className="heading text-3xl">
-          <span data-bg="white">S</span>ervices We Offers
+          <span data-bg="purple">S</span>ervices We Offers
         </h1>
         {/* <h1 className="text-3xl font-bold text-[#000000] ">
           Services We Offers

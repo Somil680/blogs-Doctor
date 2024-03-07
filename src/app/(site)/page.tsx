@@ -89,7 +89,7 @@ const Home = ({}: Props) => {
         <About />
         <Cards />
 
-        <div className=" bg-secondary_color w-full">
+        <div className="  w-full">
           <Services />
         </div>
 
